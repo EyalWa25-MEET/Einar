@@ -124,13 +124,34 @@
       color: #FFDD77;
     }
   </style>
-</head>
+
+<body>
+
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'ar',
+},
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript" 
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+</body>
 <body>
   <div class="nav-links">
-    <a href="{{ url_for('home') }}">Home</a>
-    <a href="{{ url_for('about') }}">About Us</a>
-    <a href="{{ url_for('login') }}">Logout</a>
-    <a href="{{ url_for('contact_page') }}">Contact</a>
+    <a href="{{ url_for('home') }}">الصفحة الرئيسية</a>
+    <a href="{{ url_for('about') }}">معلومات عنا</a>
+    <a href="{{ url_for('login') }}">تسجيل خروج
+</a>
+    <a href="{{ url_for('contact_page') }}">اتصال</a>
   </div>
    <h1 class= "head">اكتشف مكانك في اينار</h1>
   <div class="content">
@@ -143,19 +164,19 @@
       <div class="gallery">
         <div class="album">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF5PtTPcWAttRZT3N7f1uLvqOiMWXUZOQ8xA&s" alt="First activity of the year" class="album-cover">
-          <p class="album-title">First activity of the year</p>
+          <p class="album-title">النشاط الأول لهذا العام</p>
         </div>
         <div class="album">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45kuOo38s7iFApGbGJg-l6Whl6_-0LhYtCA&s" alt="Krembo Seminar" class="album-cover">
-          <p class="album-title">cooking activity</p>
+          <p class="album-title">نشاط الطبخ</p>
         </div>
         <div class="album">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGh4CWzs6JfymO5AFVxTvXEVGg3J11iHdDAIDznP3b8l6ufSqYAi3ZaHoalOSRYvyt9_4&usqp=CAU" alt="Valentines Day Activity" class="album-cover">
-          <p class="album-title"> Activity</p>
+          <p class="album-title"> نشاط</p>
         </div>
         <div class="album">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfLEErUDKCmx4n4jWiShwjSIBw6U2H5ejt40xfJlqAYEfoAIbtdKH8RXkw1wwtUAIF7tw&usqp=CAU" alt="Masa Aviv" class="album-cover">
-          <p class="album-title">Masa Aviv</p>
+          <p class="album-title">ماسا أبيب</p>
         </div>
       </div>
     </div>
